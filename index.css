@@ -378,6 +378,25 @@ body {
   box-shadow: 0 5px 15px rgba(45, 167, 203, 0.3);
 }
 
+/* スクロールバーを消去 */
+html {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;             /* Safari and Chrome */
+}
+
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;             /* Safari and Chrome */
+}
+
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
