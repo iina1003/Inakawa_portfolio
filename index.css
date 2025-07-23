@@ -16,6 +16,13 @@
   font-style: normal;
 }
 
+.potta-one-regular {
+  font-family: "Potta One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 @font-face {
     font-family: "クラフト明朝"; /*任意のフォントファミリー名でOK*/
     src: url("/fonts/craftmincho.otf") format("opentype"); /*fontがあるパスを書いて、formatを指定*/
@@ -32,7 +39,7 @@
 
 
 body {
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Potta One", sans-serif;
   margin: 0;
   background: #FA9AB8;
   color: #2DA7CB;
@@ -63,7 +70,8 @@ img {
 }
 
 #about {
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Potta One", sans-serif;
+  padding-top: 0% ;
 }
 
 /* ロゴコンテナのスタイル */
@@ -247,7 +255,7 @@ body {
 }
 
 .hanamiti-charm-content p {
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Potta One", sans-serif;
   font-size: 1.1rem;
   color: #2DA7CB;
   text-align: center;
@@ -269,7 +277,7 @@ body {
   transition: all 0.3s ease;
   margin: 5px 0;
   width: 100%;
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Potta One", sans-serif;
   font-size: 0.9rem; /* フォントサイズを調整 */
   background: rgba(255, 255, 255, 0.8);
 }
@@ -344,7 +352,7 @@ body {
 }
 
 .ippudo-charm-content p {
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Potta One", sans-serif;
   font-size: 1.1rem; /* 少し小さくして統一感を出す */
   color: #2DA7CB;
   text-align: center;
@@ -366,7 +374,7 @@ body {
   transition: all 0.3s ease;
   margin: 5px 0;
   width: 100%;
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Potta One", sans-serif;
   font-size: 0.9rem; /* フォントサイズを調整 */
   background: rgba(255, 255, 255, 0.8);
 }
