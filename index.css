@@ -71,6 +71,16 @@ img {
   font-family: "Potta One", sans-serif;
   padding-top: 0% ;
 }
+
+.my-item {
+  text-align : center;
+  margin:40px 40px 40px 40px;
+  padding: 20px;
+  background: #F2E12E;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
   
 /* ロゴコンテナのスタイル */
 .logo-container {
@@ -184,6 +194,16 @@ body {
 
 .image-item img:hover {
   transform: scale(1.05);
+}
+
+.ramen-love{
+  text-align : center;
+  margin:40px 40px 40px 40px;
+  padding: 20px;
+  background: #F2E12E;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* はなみち画像コンテナのスタイル*/
