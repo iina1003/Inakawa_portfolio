@@ -22,7 +22,6 @@
   font-style: normal;
 }
 
-
 @font-face {
     font-family: "クラフト明朝"; /*任意のフォントファミリー名でOK*/
     src: url("/fonts/craftmincho.otf") format("opentype"); /*fontがあるパスを書いて、formatを指定*/
@@ -36,7 +35,6 @@
     font-display: swap; /*ダウンロード状況に応じてフォントの表示を変える
 (「swap」はWebフォントが読み込まれるまでフォールバックフォントで表示し、読み込まれた時点で置き換えます。)*/
   }
-
 
 body {
   font-family: "Potta One", sans-serif;
@@ -73,7 +71,7 @@ img {
   font-family: "Potta One", sans-serif;
   padding-top: 0% ;
 }
-
+  
 /* ロゴコンテナのスタイル */
 .logo-container {
   display: flex;
@@ -145,8 +143,6 @@ img {
   box-shadow: 0 10px 30px rgba(53, 218, 210, 0.2);
 }
 
-
-
 .loading {
   animation: pulse 2s infinite;
 }
@@ -177,7 +173,6 @@ body {
   text-align: center;
 }
 
-
 /* 課題の写真のスタイル */
 .image-item img {
   width: 100%;
@@ -203,7 +198,7 @@ body {
 
 .hanamiti-image-item {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
   max-width: 30%; /* 3つの要素を均等に配置 */
   text-align: center;
   display: flex;
@@ -232,7 +227,7 @@ body {
 /* はなみちの魅力セクション */
 .hanamiti-charm-section {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
   max-width: 30%; /* 他の要素と同じ幅 */
   display: flex;
   flex-direction: column;
@@ -301,7 +296,7 @@ body {
 
 .ippudo-image-item {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
   max-width: 30%; /* 3つの要素を均等に配置 */
   text-align: center;
   display: flex;
@@ -330,7 +325,7 @@ body {
 /* 一風堂の魅力セクション */
 .ippudo-charm-section {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -405,34 +400,70 @@ body::-webkit-scrollbar {
     display: none;             /* Safari and Chrome */
 }
 
-
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-  .image-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .image-item,
-  .charm-section {
-    max-width: 100%;
-    min-width: auto;
-  }
-  
-  .image-item img {
-    height: auto; /* モバイルでは自動調整 */
-  }
-}
-
 /* ローディングアニメーション */
 @keyframes pulse {
-
   0%,
   100% {
     opacity: 1;
   }
-
   50% {
     opacity: 0.7;
+  }
+}
+
+/* レスポンシブデザイン */
+
+/* タブレット横向き（1024px以下） */
+@media (max-width: 1024px) {
+  .hanamiti-image-container,
+  .ippudo-image-container {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .hanamiti-image-item,
+  .hanamiti-charm-section,
+  .ippudo-image-item,
+  .ippudo-charm-section {
+    min-width: 280px;
+    max-width: 50%;
+  }
+  
+  .main-title {
+    font-size: 5rem;
+  }
+}
+
+
+/* タブレット・スマートフォン（768px以下） */
+@media (max-width: 768px) {
+  .image-container,
+  .hanamiti-image-container,
+  .ippudo-image-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .image-item,
+  .hanamiti-image-item,
+  .hanamiti-charm-section,
+  .ippudo-image-item,
+  .ippudo-charm-section {
+    max-width: 100%;
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .image-item img {
+    height: auto;
+  }
+  
+  .main-title {
+    font-size: 3.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
   }
 }
